@@ -1,0 +1,821 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\lab5ej2.X.production.obj
+cinit CODE 0 15 15 1D 2
+text1 CODE 0 32 32 176 2
+text2 CODE 0 ED8 ED8 10 2
+text3 CODE 0 F43 F43 23 2
+text4 CODE 0 F8E F8E 34 2
+text5 CODE 0 FC2 FC2 3E 2
+text6 CODE 0 F66 F66 28 2
+text7 CODE 0 6C5 6C5 5F 2
+text8 CODE 0 EE8 EE8 14 2
+text9 CODE 0 F11 F11 15 2
+text10 CODE 0 EFC EFC 15 2
+text11 CODE 0 1A8 1A8 13D 2
+text12 CODE 0 5C9 5C9 8E 2
+text13 CODE 0 ECE ECE A 2
+text14 CODE 0 4F6 4F6 D3 2
+text15 CODE 0 2E5 2E5 109 2
+text16 CODE 0 7DB 7DB 25 2
+text17 CODE 0 657 657 6E 2
+text18 CODE 0 780 780 5B 2
+text19 CODE 0 F26 F26 1D 2
+idataCOMMON CODE 0 3 3 1 2
+maintext CODE 0 3EE 3EE 108 2
+cstackCOMMON COMMON 1 70 70 5 1
+cstackBANK0 BANK0 1 20 20 42 1
+cstackBANK1 BANK1 1 ED ED 2 1
+cstackBANK3 BANK3 1 190 190 2 1
+intentry CODE 0 4 4 E 2
+bssBANK0 BANK0 1 62 62 D 1
+bssBANK1 BANK1 1 A0 A0 4D 1
+strings STRING 0 724 724 5C 2
+dataCOMMON COMMON 1 79 79 1 1
+clrtext CODE 0 EC6 EC6 8 2
+bssCOMMON COMMON 1 75 75 4 1
+$C:\Users\piniel\AppData\Local\Temp\s9h8.obj
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 12 12 3 2
+config CONFIG 0 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 6F-6F 1
+RAM EF-EF 1
+RAM 110-16F 1
+RAM 192-1EF 1
+BANK0 6F-6F 1
+BANK1 EF-EF 1
+BANK2 110-16F 1
+BANK3 192-1EF 1
+CONST 800-EC5 2
+CONST 1000-1FFF 2
+ENTRY 800-EC5 2
+ENTRY 1000-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 800-EC5 2
+CODE 1000-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7A-7D 1
+EEDATA 2100-21FF 2
+STRCODE 800-EC5 2
+STRCODE 1000-1FFF 2
+STRING 800-EC5 2
+STRING 1000-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\lab5ej2.X.production.obj
+15 cinit CODE >425:C:\Users\piniel\AppData\Local\Temp\s9h8.
+15 cinit CODE >428:C:\Users\piniel\AppData\Local\Temp\s9h8.
+15 cinit CODE >490:C:\Users\piniel\AppData\Local\Temp\s9h8.
+1A cinit CODE >491:C:\Users\piniel\AppData\Local\Temp\s9h8.
+1B cinit CODE >510:C:\Users\piniel\AppData\Local\Temp\s9h8.
+1C cinit CODE >511:C:\Users\piniel\AppData\Local\Temp\s9h8.
+1D cinit CODE >512:C:\Users\piniel\AppData\Local\Temp\s9h8.
+1E cinit CODE >513:C:\Users\piniel\AppData\Local\Temp\s9h8.
+1F cinit CODE >514:C:\Users\piniel\AppData\Local\Temp\s9h8.
+24 cinit CODE >517:C:\Users\piniel\AppData\Local\Temp\s9h8.
+25 cinit CODE >518:C:\Users\piniel\AppData\Local\Temp\s9h8.
+26 cinit CODE >519:C:\Users\piniel\AppData\Local\Temp\s9h8.
+27 cinit CODE >520:C:\Users\piniel\AppData\Local\Temp\s9h8.
+2A cinit CODE >523:C:\Users\piniel\AppData\Local\Temp\s9h8.
+2B cinit CODE >524:C:\Users\piniel\AppData\Local\Temp\s9h8.
+2C cinit CODE >525:C:\Users\piniel\AppData\Local\Temp\s9h8.
+2D cinit CODE >526:C:\Users\piniel\AppData\Local\Temp\s9h8.
+2E cinit CODE >532:C:\Users\piniel\AppData\Local\Temp\s9h8.
+2E cinit CODE >534:C:\Users\piniel\AppData\Local\Temp\s9h8.
+2F cinit CODE >535:C:\Users\piniel\AppData\Local\Temp\s9h8.
+4 intentry CODE >47:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F26 text19 CODE >47:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F26 text19 CODE >49:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F28 text19 CODE >51:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F29 text19 CODE >52:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F2D text19 CODE >53:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F31 text19 CODE >54:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F35 text19 CODE >56:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F36 text19 CODE >57:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F38 text19 CODE >60:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+780 text18 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+780 text18 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+783 text18 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+785 text18 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+78A text18 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+78C text18 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+78E text18 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+793 text18 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+797 text18 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+799 text18 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+79D text18 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+79F text18 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+7A1 text18 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+7A8 text18 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+7AC text18 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+7AD text18 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+7B4 text18 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+7BC text18 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+7C2 text18 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+7C3 text18 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+7CA text18 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+7CE text18 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+7D1 text18 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+7D6 text18 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+657 text17 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+657 text17 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+661 text17 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+668 text17 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+66C text17 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+674 text17 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+679 text17 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+67D text17 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+687 text17 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+68F text17 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+68F text17 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+694 text17 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+696 text17 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+69E text17 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6A4 text17 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6A6 text17 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6AC text17 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6AE text17 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6C0 text17 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6C3 text17 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6C4 text17 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+7DB text16 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+7DB text16 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+7DE text16 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+7E0 text16 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+7E5 text16 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+7E7 text16 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+2E5 text15 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+2E5 text15 CODE >90:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+2F3 text15 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+2FF text15 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+30E text15 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+315 text15 CODE >94:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+324 text15 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+328 text15 CODE >97:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+329 text15 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+32A text15 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+32B text15 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+32C text15 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+32D text15 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+333 text15 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+334 text15 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+33A text15 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+33E text15 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+346 text15 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+348 text15 CODE >112:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+353 text15 CODE >114:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+35B text15 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+35F text15 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+364 text15 CODE >117:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+368 text15 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+370 text15 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+372 text15 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+37D text15 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+385 text15 CODE >126:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+389 text15 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+38D text15 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+38F text15 CODE >131:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+395 text15 CODE >132:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+39F text15 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+3A1 text15 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+3A7 text15 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+3B1 text15 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+3B2 text15 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+3C0 text15 CODE >141:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+3C2 text15 CODE >142:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+3C8 text15 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+3D2 text15 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+3D4 text15 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+4F6 text14 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+4F6 text14 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+507 text14 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+50E text14 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+51D text14 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+524 text14 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+529 text14 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+53B text14 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+54D text14 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+551 text14 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+552 text14 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+553 text14 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+559 text14 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+55F text14 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+563 text14 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+565 text14 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+573 text14 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+57B text14 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+583 text14 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+587 text14 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+58B text14 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+58D text14 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+59B text14 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5A3 text14 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5AB text14 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5AF text14 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+ECE text13 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
+ECE text13 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
+ED5 text13 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
+5C9 text12 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+5C9 text12 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+5DA text12 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+5E3 text12 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+5F5 text12 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+5F6 text12 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+5FC text12 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+603 text12 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+605 text12 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+607 text12 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+60C text12 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+615 text12 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+61E text12 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+625 text12 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+629 text12 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+632 text12 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+63B text12 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+63D text12 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+63D text12 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+640 text12 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+643 text12 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+64E text12 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+1A8 text11 CODE >172:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+1A8 text11 CODE >174:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+1B1 text11 CODE >175:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+1BC text11 CODE >176:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+1CB text11 CODE >177:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+202 text11 CODE >178:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+213 text11 CODE >179:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+262 text11 CODE >180:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+2E2 text11 CODE >181:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+2E4 text11 CODE >182:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+EFC text10 CODE >130:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+EFC text10 CODE >132:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F00 text10 CODE >133:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F01 text10 CODE >134:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F04 text10 CODE >135:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F05 text10 CODE >136:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F06 text10 CODE >137:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F08 text10 CODE >138:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F09 text10 CODE >139:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F0A text10 CODE >140:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F0B text10 CODE >141:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F0F text10 CODE >142:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F10 text10 CODE >144:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F11 text9 CODE >145:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F11 text9 CODE >147:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F16 text9 CODE >148:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F17 text9 CODE >149:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F18 text9 CODE >150:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F1C text9 CODE >151:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F1D text9 CODE >152:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F1E text9 CODE >153:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F1F text9 CODE >154:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F22 text9 CODE >155:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F25 text9 CODE >156:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+EE8 text8 CODE >157:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+EE8 text8 CODE >162:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+EEB text8 CODE >163:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+EEE text8 CODE >164:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+EF1 text8 CODE >165:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+EF4 text8 CODE >166:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+EF8 text8 CODE >167:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+EFA text8 CODE >168:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+EFB text8 CODE >170:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+6C5 text7 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+6C5 text7 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+6C9 text7 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+6EE text7 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+6F0 text7 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+715 text7 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+717 text7 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+719 text7 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+F66 text6 CODE >184:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F66 text6 CODE >186:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F6A text6 CODE >187:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F6E text6 CODE >189:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F7B text6 CODE >191:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F7F text6 CODE >192:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F81 text6 CODE >193:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+F85 text6 CODE >189:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+FC2 text5 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+FC2 text5 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+FC6 text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+FCA text5 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+FCC text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+FCE text5 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+FD5 text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+FD9 text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+FDA text5 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+FE1 text5 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+FE9 text5 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+FEF text5 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+FF0 text5 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+FF7 text5 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+FFB text5 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+F8E text4 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+F8E text4 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+F94 text4 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+F96 text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+F98 text4 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+F9F text4 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+FA3 text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+FA4 text4 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+FAC text4 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+FB2 text4 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+FB9 text4 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+FBD text4 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+F43 text3 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+F43 text3 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+F47 text3 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+F49 text3 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+F4F text3 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+F56 text3 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+F5D text3 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+F61 text3 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+ED8 text2 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+EDB text2 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+32 text1 CODE >492:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+35 text1 CODE >533:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+39 text1 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+4B text1 CODE >538:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+4F text1 CODE >541:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+5A text1 CODE >542:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+5B text1 CODE >546:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+5D text1 CODE >548:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+5E text1 CODE >597:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+6C text1 CODE >598:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+70 text1 CODE >600:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+85 text1 CODE >601:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+9C text1 CODE >602:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+AA text1 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+C1 text1 CODE >1259:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+CF text1 CODE >1261:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+D1 text1 CODE >1262:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+D5 text1 CODE >1263:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+DA text1 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+E0 text1 CODE >1306:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+F9 text1 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+101 text1 CODE >1345:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+109 text1 CODE >1346:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+10F text1 CODE >1381:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+120 text1 CODE >1382:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+12E text1 CODE >1384:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+132 text1 CODE >1428:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+136 text1 CODE >1430:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+141 text1 CODE >1431:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+14B text1 CODE >1438:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+14F text1 CODE >1439:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+15A text1 CODE >1472:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+15E text1 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+165 text1 CODE >1489:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+195 text1 CODE >1524:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+1A0 text1 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+1A1 text1 CODE >1538:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+3EE maintext CODE >62:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+3EE maintext CODE >64:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+3F3 maintext CODE >65:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+3F8 maintext CODE >66:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+3FD maintext CODE >67:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+401 maintext CODE >69:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+40F maintext CODE >70:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+41A maintext CODE >72:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+422 maintext CODE >73:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+424 maintext CODE >74:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+42E maintext CODE >70:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+43D maintext CODE >77:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+441 maintext CODE >78:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+443 maintext CODE >79:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+445 maintext CODE >80:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+447 maintext CODE >81:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+449 maintext CODE >82:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+44B maintext CODE >87:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+450 maintext CODE >89:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+455 maintext CODE >90:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+46A maintext CODE >92:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+478 maintext CODE >93:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+483 maintext CODE >95:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+48B maintext CODE >96:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+48D maintext CODE >97:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+491 maintext CODE >93:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+49A maintext CODE >104:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+4B4 maintext CODE >105:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+4BF maintext CODE >107:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+4C7 maintext CODE >108:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+4C9 maintext CODE >109:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+4D3 maintext CODE >105:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+4E2 maintext CODE >114:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+4E6 maintext CODE >115:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+4E9 maintext CODE >117:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+4EC maintext CODE >119:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+4ED maintext CODE >120:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+4EF maintext CODE >121:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+4F0 maintext CODE >122:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+4F5 maintext CODE >84:C:\Users\piniel\MPLABXProjects\lab5ej2.X\lab5ej2.c
+EC6 clrtext CODE >497:C:\Users\piniel\AppData\Local\Temp\s9h8.
+EC6 clrtext CODE >498:C:\Users\piniel\AppData\Local\Temp\s9h8.
+EC7 clrtext CODE >499:C:\Users\piniel\AppData\Local\Temp\s9h8.
+EC7 clrtext CODE >500:C:\Users\piniel\AppData\Local\Temp\s9h8.
+EC8 clrtext CODE >501:C:\Users\piniel\AppData\Local\Temp\s9h8.
+EC9 clrtext CODE >502:C:\Users\piniel\AppData\Local\Temp\s9h8.
+ECA clrtext CODE >503:C:\Users\piniel\AppData\Local\Temp\s9h8.
+ECB clrtext CODE >504:C:\Users\piniel\AppData\Local\Temp\s9h8.
+ECC clrtext CODE >505:C:\Users\piniel\AppData\Local\Temp\s9h8.
+ECD clrtext CODE >506:C:\Users\piniel\AppData\Local\Temp\s9h8.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+___awdiv@counter 25 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+___lwmod@counter 2D 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__Hspace_0 2009 0 ABS 0 - -
+__Hspace_1 192 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__end_of_InitES 1E22 0 CODE 0 text10 dist/default/production\lab5ej2.X.production.obj
+___awtoft@sign 2E 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__end_of_InitUSART 1DF8 0 CODE 0 text8 dist/default/production\lab5ej2.X.production.obj
+_T1CONbits 10 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__end_of_correccion 1F1C 0 CODE 0 text6 dist/default/production\lab5ej2.X.production.obj
+__size_of_InitUSART 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+main@i 190 0 BANK3 1 cstackBANK3 dist/default/production\lab5ej2.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_TMR1 E 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\piniel\AppData\Local\Temp\s9h8.obj
+_main 7DC 0 CODE 0 maintext dist/default/production\lab5ej2.X.production.obj
+_temp 62 0 BANK0 1 bssBANK0 dist/default/production\lab5ej2.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+___ftadd@f1 42 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+___ftadd@f2 45 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+start 24 0 CODE 0 init C:\Users\piniel\AppData\Local\Temp\s9h8.obj
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__size_of___ftadd 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__size_of___ftneg 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+?___wmul 20 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+_InitUSART 1DD0 0 CODE 0 text8 dist/default/production\lab5ej2.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+___ftge@ff1 20 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+___ftge@ff2 23 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+intlevel0 0 0 ENTRY 0 functab C:\Users\piniel\AppData\Local\Temp\s9h8.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\piniel\AppData\Local\Temp\s9h8.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\piniel\AppData\Local\Temp\s9h8.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\piniel\AppData\Local\Temp\s9h8.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\piniel\AppData\Local\Temp\s9h8.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\piniel\AppData\Local\Temp\s9h8.obj
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+___awdiv@sign 26 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+_dectemp 67 0 BANK0 1 bssBANK0 dist/default/production\lab5ej2.X.production.obj
+__pidataCOMMON 6 0 CODE 0 idataCOMMON dist/default/production\lab5ej2.X.production.obj
+___ftmul@f1 32 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+___ftmul@f2 35 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+___ftneg@f1 2F 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+___wmul@multiplicand 22 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+_ADCON0 1F 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+_ADRESH 1E 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+_ADRESL 9E 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+_ANSELH 189 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+___awdiv@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+_Banderaconv 6C 0 BANK0 1 bssBANK0 dist/default/production\lab5ej2.X.production.obj
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+__size_of___awtoft 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__end_of___ftge E48 0 CODE 0 text7 dist/default/production\lab5ej2.X.production.obj
+__end_of___wmul 1ECC 0 CODE 0 text3 dist/default/production\lab5ej2.X.production.obj
+___fttol@f1 4F 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+___awdiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+___lwmod@divisor 28 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__end_of___awdiv FB6 0 CODE 0 text18 dist/default/production\lab5ej2.X.production.obj
+__end_of___ftadd 7DC 0 CODE 0 text15 dist/default/production\lab5ej2.X.production.obj
+__end_of___ftmul B92 0 CODE 0 text14 dist/default/production\lab5ej2.X.production.obj
+__end_of___ftneg 1DB0 0 CODE 0 text13 dist/default/production\lab5ej2.X.production.obj
+__end_of___fttol CAE 0 CODE 0 text12 dist/default/production\lab5ej2.X.production.obj
+__end_of___lwdiv 2000 0 CODE 0 text5 dist/default/production\lab5ej2.X.production.obj
+__end_of___lwmod 1F84 0 CODE 0 text4 dist/default/production\lab5ej2.X.production.obj
+__size_of_isdigit 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+_InitES 1DF8 0 CODE 0 text10 dist/default/production\lab5ej2.X.production.obj
+_dpowers E54 0 STRING 0 strings dist/default/production\lab5ej2.X.production.obj
+_BAUDCTLbits 187 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+___lwdiv@quotient 26 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+___lwmod@dividend 2A 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+start_initialization 2A 0 CODE 0 cinit dist/default/production\lab5ej2.X.production.obj
+___awtoft FB6 0 CODE 0 text16 dist/default/production\lab5ej2.X.production.obj
+_TRISCbits 87 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__end_of___awtoft 1000 0 CODE 0 text16 dist/default/production\lab5ej2.X.production.obj
+clear_ram0 1D8C 0 CODE 0 clrtext dist/default/production\lab5ej2.X.production.obj
+_SPBRGH 9A 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__pcstackBANK1 ED 0 BANK1 1 cstackBANK1 dist/default/production\lab5ej2.X.production.obj
+__pcstackBANK3 190 0 BANK3 1 cstackBANK3 dist/default/production\lab5ej2.X.production.obj
+__size_of_correccion 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+___fttol@exp1 5C 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+___fttol@lval 58 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+_unitemp 69 0 BANK0 1 bssBANK0 dist/default/production\lab5ej2.X.production.obj
+___ftpack CAE 0 CODE 0 text17 dist/default/production\lab5ej2.X.production.obj
+__size_of_InitES 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+___ftpack@arg 20 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+___ftpack@exp 23 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+_isdigit$681 20 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__end_of_Adquisicion 5CA 0 CODE 0 text11 dist/default/production\lab5ej2.X.production.obj
+_valormedido CA 0 BANK1 1 bssBANK1 dist/default/production\lab5ej2.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\piniel\AppData\Local\Temp\s9h8.obj
+__end_of___ftpack D8A 0 CODE 0 text17 dist/default/production\lab5ej2.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 64 0 CODE 0 cinit -
+__size_of_rutinainterrupciones 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__stringbase E52 0 STRING 0 strings dist/default/production\lab5ej2.X.production.obj
+___lwdiv@counter 25 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+_Contador 78 0 COMMON 1 bssCOMMON dist/default/production\lab5ej2.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__end_of_sprintf 350 0 CODE 0 text1 dist/default/production\lab5ej2.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__end_of_isdigit 1DD0 0 CODE 0 text2 dist/default/production\lab5ej2.X.production.obj
+__Lcinit 2A 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+___ftadd@exp1 4E 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+___ftadd@exp2 4D 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+___ftadd@sign 4C 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__Lstack 0 0 STACK 2 stack -
+__end_of_rutinainterrupciones 1E86 0 CODE 0 text19 dist/default/production\lab5ej2.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 24 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 24 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+___ftge D8A 0 CODE 0 text7 dist/default/production\lab5ej2.X.production.obj
+___wmul 1E86 0 CODE 0 text3 dist/default/production\lab5ej2.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__LcstackBANK3 0 0 ABS 0 cstackBANK3 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_InitTMR1 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__S0 2009 0 ABS 0 - -
+__S1 192 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_adc 6D 0 BANK0 1 bssBANK0 dist/default/production\lab5ej2.X.production.obj
+__CFG_BOR4V$BOR40V 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+saved_w 7E 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+___awtoft@c 29 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+sprintf@val 3B 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+_Adquisicion$882 5F 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__Lintentry 8 0 CODE 0 intentry -
+__stringtab E48 0 STRING 0 strings dist/default/production\lab5ej2.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\piniel\AppData\Local\Temp\s9h8.obj
+__size_of___ftge 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+?___awtoft 29 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+_RCSTAbits 18 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+_PIE1bits 8C 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+sprintf@flag 3A 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+sprintf@prec 39 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+_InitTMR1 1E22 0 CODE 0 text9 dist/default/production\lab5ej2.X.production.obj
+__ptext10 1DF8 0 CODE 0 text10 dist/default/production\lab5ej2.X.production.obj
+__ptext11 350 0 CODE 0 text11 dist/default/production\lab5ej2.X.production.obj
+__ptext12 B92 0 CODE 0 text12 dist/default/production\lab5ej2.X.production.obj
+__ptext13 1D9C 0 CODE 0 text13 dist/default/production\lab5ej2.X.production.obj
+__ptext14 9EC 0 CODE 0 text14 dist/default/production\lab5ej2.X.production.obj
+__ptext15 5CA 0 CODE 0 text15 dist/default/production\lab5ej2.X.production.obj
+__ptext16 FB6 0 CODE 0 text16 dist/default/production\lab5ej2.X.production.obj
+__ptext17 CAE 0 CODE 0 text17 dist/default/production\lab5ej2.X.production.obj
+__ptext18 F00 0 CODE 0 text18 dist/default/production\lab5ej2.X.production.obj
+__ptext19 1E4C 0 CODE 0 text19 dist/default/production\lab5ej2.X.production.obj
+___awdiv F00 0 CODE 0 text18 dist/default/production\lab5ej2.X.production.obj
+___ftadd 5CA 0 CODE 0 text15 dist/default/production\lab5ej2.X.production.obj
+___ftmul 9EC 0 CODE 0 text14 dist/default/production\lab5ej2.X.production.obj
+___ftneg 1D9C 0 CODE 0 text13 dist/default/production\lab5ej2.X.production.obj
+___fttol B92 0 CODE 0 text12 dist/default/production\lab5ej2.X.production.obj
+___lwdiv 1F84 0 CODE 0 text5 dist/default/production\lab5ej2.X.production.obj
+___lwmod 1F1C 0 CODE 0 text4 dist/default/production\lab5ej2.X.production.obj
+__pmaintext 7DC 0 CODE 0 maintext dist/default/production\lab5ej2.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+?___ftpack 20 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+_escritura A2 0 BANK1 1 bssBANK1 dist/default/production\lab5ej2.X.production.obj
+__CFG_IESO$ON 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__end_of_InitTMR1 1E4C 0 CODE 0 text9 dist/default/production\lab5ej2.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+___wmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+___lwdiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__size_of_Adquisicion 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\piniel\AppData\Local\Temp\s9h8.obj
+stacklo 0 0 ABS 0 - C:\Users\piniel\AppData\Local\Temp\s9h8.obj
+_valor1 75 0 COMMON 1 bssCOMMON dist/default/production\lab5ej2.X.production.obj
+correccion@i 20 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+_ADCON0bits 1F 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+_ADCON1bits 9F 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__end_of__stringtab E54 0 STRING 0 strings dist/default/production\lab5ej2.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+_banderaadquirido 6B 0 BANK0 1 bssBANK0 dist/default/production\lab5ej2.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+___ftmul@cntr 40 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__pbssCOMMON 75 0 COMMON 1 bssCOMMON dist/default/production\lab5ej2.X.production.obj
+___ftmul@sign 41 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__HcstackBANK3 0 0 ABS 0 cstackBANK3 -
+_PIR1bits C 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__Lend_init 24 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 5C 0 CODE 0 cinit dist/default/production\lab5ej2.X.production.obj
+__Hintentry 24 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 27 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+?___awdiv 20 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+___lwdiv@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+?___ftadd 42 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+?___ftmul 32 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+?___ftneg 2F 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+?___fttol 4F 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+?___lwdiv 20 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+?___lwmod 28 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__ptext1 64 0 CODE 0 text1 dist/default/production\lab5ej2.X.production.obj
+__ptext2 1DB0 0 CODE 0 text2 dist/default/production\lab5ej2.X.production.obj
+__ptext3 1E86 0 CODE 0 text3 dist/default/production\lab5ej2.X.production.obj
+__ptext4 1F1C 0 CODE 0 text4 dist/default/production\lab5ej2.X.production.obj
+__ptext5 1F84 0 CODE 0 text5 dist/default/production\lab5ej2.X.production.obj
+__ptext6 1ECC 0 CODE 0 text6 dist/default/production\lab5ej2.X.production.obj
+__ptext7 D8A 0 CODE 0 text7 dist/default/production\lab5ej2.X.production.obj
+__ptext8 1DD0 0 CODE 0 text8 dist/default/production\lab5ej2.X.production.obj
+__ptext9 1E22 0 CODE 0 text9 dist/default/production\lab5ej2.X.production.obj
+_sprintf 64 0 CODE 0 text1 dist/default/production\lab5ej2.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+sprintf@ap 38 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+sprintf@sp 3F 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+_isdigit 1DB0 0 CODE 0 text2 dist/default/production\lab5ej2.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+___ftmul@exp 3C 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__end_of__initialization 5C 0 CODE 0 cinit dist/default/production\lab5ej2.X.production.obj
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+___ftpack@sign 24 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+_centemp 65 0 BANK0 1 bssBANK0 dist/default/production\lab5ej2.X.production.obj
+_rutinainterrupciones 1E4C 0 CODE 0 text19 dist/default/production\lab5ej2.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\lab5ej2.X.production.obj
+_TXSTAbits 98 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__Hend_init 2A 0 CODE 0 end_init -
+sprintf@c 40 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+sprintf@f 2E 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__end_of_main 9EC 0 CODE 0 maintext dist/default/production\lab5ej2.X.production.obj
+isdigit@c 21 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+_ANSEL 188 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__end_of_dpowers E68 0 STRING 0 strings dist/default/production\lab5ej2.X.production.obj
+_correccion 1ECC 0 CODE 0 text6 dist/default/production\lab5ej2.X.production.obj
+?_sprintf 2E 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+_PORTA 5 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+_SPBRG 99 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+_T1CON 10 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+_TXREG 19 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\lab5ej2.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\lab5ej2.X.production.obj
+___fttol@sign1 57 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+sprintf@width 3D 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+__initialization 2A 0 CODE 0 cinit dist/default/production\lab5ej2.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__pbssBANK0 62 0 BANK0 1 bssBANK0 dist/default/production\lab5ej2.X.production.obj
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\lab5ej2.X.production.obj
+__pdataCOMMON 79 0 COMMON 1 dataCOMMON dist/default/production\lab5ej2.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\lab5ej2.X.production.obj
+__pstrings E48 0 STRING 0 strings dist/default/production\lab5ej2.X.production.obj
+___wmul@product 24 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+_Adquisicion 350 0 CODE 0 text11 dist/default/production\lab5ej2.X.production.obj
+___ftmul@f3_as_product 3D 0 BANK0 1 cstackBANK0 dist/default/production\lab5ej2.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text2 0 ED8 1DB0 10 2
+text3 0 F43 1E86 23 2
+text4 0 F8E 1F1C 34 2
+text5 0 FC2 1F84 3E 2
+text6 0 F66 1ECC 28 2
+text8 0 EE8 1DD0 14 2
+text9 0 F11 1E22 15 2
+text10 0 EFC 1DF8 15 2
+text13 0 ECE 1D9C A 2
+text18 0 780 F00 80 2
+text19 0 F26 1E4C 1D 2
+cstackCOMMON 1 70 70 A 1
+cstackBANK0 1 20 20 4F 1
+cstackBANK3 1 190 190 2 1
+intentry 0 4 8 720 2
+reset_vec 0 0 0 4 2
+bssBANK1 1 A0 A0 4F 1
+strings 0 724 E48 5C 2
+clrtext 0 EC6 1D8C 8 2
+config 0 2007 400E 2 2

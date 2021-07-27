@@ -1,0 +1,218 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 6 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"44 C:\Users\piniel\MPLABXProjects\lab2ej2.X\lab2ej2.c
+[v _rutinainterrupciones rutinainterrupciones `II(v  1 e 1 0 ]
+"56
+[v _main main `(v  1 e 1 0 ]
+"109
+[v _InitES InitES `(v  1 e 1 0 ]
+"119
+[v _InitTMR1 InitTMR1 `(v  1 e 1 0 ]
+"132
+[v _InitADC InitADC `(v  1 e 1 0 ]
+"148
+[v _Adquisicion Adquisicion `(v  1 e 1 0 ]
+"164 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"226
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S151 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"480
+[s S160 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S165 . 1 `S151 1 . 1 0 `S160 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES165  1 e 1 @11 ]
+[s S19 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"551
+[u S27 . 1 `S19 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES27  1 e 1 @12 ]
+"648
+[v _TMR1 TMR1 `VEus  1 e 2 @14 ]
+"669
+[v _T1CON T1CON `VEuc  1 e 1 @16 ]
+[s S108 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1GE 1 0 :1:6 
+`uc 1 T1GINV 1 0 :1:7 
+]
+"698
+[s S116 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1INSYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T1GIV 1 0 :1:7 
+]
+[s S124 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1SYNC 1 0 :1:2 
+]
+[u S127 . 1 `S108 1 . 1 0 `S116 1 . 1 0 `S124 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES127  1 e 1 @16 ]
+"1236
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+[s S39 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1274
+[s S44 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S53 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S56 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S59 . 1 `S39 1 . 1 0 `S44 1 . 1 0 `S53 1 . 1 0 `S56 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES59  1 e 1 @31 ]
+"1414
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1476
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S183 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1716
+[u S191 . 1 `S183 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES191  1 e 1 @140 ]
+"2968
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+[s S202 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2989
+[u S208 . 1 `S202 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES208  1 e 1 @159 ]
+"3385
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3447
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"32 C:\Users\piniel\MPLABXProjects\lab2ej2.X\lab2ej2.c
+[v _BanderaConversion BanderaConversion `uc  1 e 1 0 ]
+"33
+[v _adc adc `i  1 e 2 0 ]
+"34
+[v _volt volt `f  1 e 3 0 ]
+"56
+[v _main main `(v  1 e 1 0 ]
+{
+"107
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 0 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 3 ]
+"13
+} 0
+"119 C:\Users\piniel\MPLABXProjects\lab2ej2.X\lab2ej2.c
+[v _InitTMR1 InitTMR1 `(v  1 e 1 0 ]
+{
+"131
+} 0
+"109
+[v _InitES InitES `(v  1 e 1 0 ]
+{
+"118
+} 0
+"132
+[v _InitADC InitADC `(v  1 e 1 0 ]
+{
+"146
+} 0
+"148
+[v _Adquisicion Adquisicion `(v  1 e 1 0 ]
+{
+"154
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 23 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 27 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 26 ]
+[v ___ftmul@exp exp `uc  1 a 1 22 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 12 ]
+[v ___ftmul@f2 f2 `f  1 p 3 15 ]
+"157
+} 0
+"32 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 11 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"44 C:\Users\piniel\MPLABXProjects\lab2ej2.X\lab2ej2.c
+[v _rutinainterrupciones rutinainterrupciones `II(v  1 e 1 0 ]
+{
+"54
+} 0

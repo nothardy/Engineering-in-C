@@ -1,0 +1,66 @@
+PROCESAMIENTO DIGITAL DE SEÑALES
+
+EVALUACION SIMULACION N°1
+
+ALUMNO: PIÑEL, JULIAN
+
+LEGAJO: ING-4995
+
+---------INCISO A:  
+
+EN MATLAB:
+
+Para el inciso a), declaro la funcion x(t) y declaro el ruido N(t) utilizando la funcion wgn(white gaussian noise) donde en sus parametros de entrada le indico que debe ser de potencia 0.25 con respecto a x(t).
+
+Para hallar la potencia de x, realizo la sumatoria del cuadrado del valor absoluto de todos los valores que toma x, y lo divido por la cantidad de valores que le di a la funcion. ( en este caso 1024). 
+
+Luego declaro y(t) como la suma entre x(t) y N(t).
+
+Finalmente grafico las tres funciones, utilizando un intervalo de tiempo de -4pi a 4pi equispaciados en 1024 valores, para agilizar el procesamiento en matlab.
+
+Las funciones son graficadas en una misma ventana mediante el comando subplot. 
+
+---------INCISO B:  
+
+
+Para muestrear la señal y(t), guardo en la variable yn, valores de y(t) cada N*ts muestras.
+
+---------INCISO C: 
+
+
+defino una funcion sinc(2*pi*t), siendo t el vector de tiempos de la y en continua.
+
+para hallar la y reconstruida, hago la convolucion entre yn y la sinc.
+
+-----------------------------------------------------------------------------------------------
+Obs: no pude hayar la yn dado que no se realmente como obtener las muestras de y, para una frecuencia Fs mediante el algoritmo de matlab. 
+
+En la practica del cursado, yn la hubiese obtenido a partir de la ecuacion de y(t), haciendo 
+yn[n]=yc(n*Ts).
+
+Pensar de que manera hallar esta yn utilizando codigos de matlab me consumio casi todo el tiempo de la evaluacion, dado que en el cursado nunca lo hicimos. En consecuencia, no pude llegar a ningun resultado. Sin embargo quiero destacar que conozco el camino teorico de como es que se hace.
+
+El resultado que deberia esperarse es una funcion muy similar a la y(t) si Fs fuere mayor al doble del ancho de banda de la señal y.
+
+---------INCISO D: 
+
+una vez definido el filtro pasabajo, aplico dicho filtro a la señal y(t). Primero transformo y(t) mediante la funcion de matlab fft. Luego multiplico la respuesta en frecuencia del filtro por la Y transformada. Finalmente aplico la ifft para antitransformar este producto, obteniendo z(t).
+
+Una vez que obtengo z(t), busco z[n] aplicando el metodo utilizado en el INCISO B. El proceso de reconstruccion es el mismo que en INCISO C.
+
+El resultado esperado deberia ser que zr(t) deberia ser similar a y(t), pero sin el ruido.
+
+si comparasemos zr con yr, serian casi identicas, con la diferencia de que yr tiene ruido y zr no, porque fue filtrado.
+
+---------INCISO F: 
+
+Resulta frustrante no poder obtener los resultados aun sabiendo el camino. Este ejercicio si bien no esta alejado de lo hecho en la practica, a diferencia de la misma, requeria un conocimiento de como muestrear la señal utilizando codigo de matlab que no he hecho en la practica. Espero haber demostrado los conocimientos necesarios en terminos de muestreo y reconstruccion.
+
+
+
+
+
+
+
+
+

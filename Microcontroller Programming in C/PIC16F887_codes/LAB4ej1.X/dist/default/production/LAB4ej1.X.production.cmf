@@ -1,0 +1,785 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Julian\AppData\Local\Temp\s3i0.obj
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 12 12 3 2
+config CONFIG 0 2007 2007 2 2
+$dist/default/production\LAB4ej1.X.production.obj
+cinit CODE 0 15 15 14 2
+text1 CODE 0 29 29 17A 2
+text2 CODE 0 67F 67F E 2
+text3 CODE 0 5F0 5F0 23 2
+text4 CODE 0 56A 56A 34 2
+text5 CODE 0 4B6 4B6 3E 2
+text6 CODE 0 1A3 1A3 11C 2
+text7 CODE 0 65C 65C 13 2
+text8 CODE 0 3DD 3DD 51 2
+text9 CODE 0 59E 59E 29 2
+text10 CODE 0 5C7 5C7 29 2
+text11 CODE 0 42E 42E 44 2
+text12 CODE 0 4F4 4F4 3D 2
+text13 CODE 0 630 630 17 2
+text14 CODE 0 647 647 15 2
+text15 CODE 0 378 378 65 2
+text16 CODE 0 66F 66F 10 2
+text17 CODE 0 472 472 44 2
+text18 CODE 0 613 613 1D 2
+maintext CODE 0 2BF 2BF B9 2
+cstackCOMMON COMMON 1 70 70 8 1
+cstackBANK0 BANK0 1 20 20 27 1
+intentry CODE 0 4 4 E 2
+bssBANK0 BANK0 1 47 47 21 1
+bssBANK1 BANK1 1 A0 A0 10 1
+strings STRING 0 531 531 39 2
+clrtext CODE 0 68D 68D 8 2
+bssCOMMON COMMON 1 78 78 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 68-6F 1
+RAM B0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 68-6F 1
+BANK1 B0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 695-1FFF 2
+ENTRY 3-3 2
+ENTRY 695-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 695-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 79-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 695-1FFF 2
+STRING 3-3 2
+STRING 695-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\LAB4ej1.X.production.obj
+15 cinit CODE >366:C:\Users\Julian\AppData\Local\Temp\s3i0.
+15 cinit CODE >369:C:\Users\Julian\AppData\Local\Temp\s3i0.
+15 cinit CODE >413:C:\Users\Julian\AppData\Local\Temp\s3i0.
+16 cinit CODE >416:C:\Users\Julian\AppData\Local\Temp\s3i0.
+17 cinit CODE >417:C:\Users\Julian\AppData\Local\Temp\s3i0.
+18 cinit CODE >418:C:\Users\Julian\AppData\Local\Temp\s3i0.
+19 cinit CODE >419:C:\Users\Julian\AppData\Local\Temp\s3i0.
+1A cinit CODE >420:C:\Users\Julian\AppData\Local\Temp\s3i0.
+1F cinit CODE >423:C:\Users\Julian\AppData\Local\Temp\s3i0.
+20 cinit CODE >424:C:\Users\Julian\AppData\Local\Temp\s3i0.
+21 cinit CODE >425:C:\Users\Julian\AppData\Local\Temp\s3i0.
+22 cinit CODE >426:C:\Users\Julian\AppData\Local\Temp\s3i0.
+25 cinit CODE >432:C:\Users\Julian\AppData\Local\Temp\s3i0.
+25 cinit CODE >434:C:\Users\Julian\AppData\Local\Temp\s3i0.
+26 cinit CODE >435:C:\Users\Julian\AppData\Local\Temp\s3i0.
+4 intentry CODE >39:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+613 text18 CODE >39:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+613 text18 CODE >41:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+615 text18 CODE >43:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+616 text18 CODE >44:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+61A text18 CODE >45:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+61E text18 CODE >46:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+622 text18 CODE >48:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+623 text18 CODE >49:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+625 text18 CODE >52:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+472 text17 CODE >149:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+472 text17 CODE >151:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+474 text17 CODE >152:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+477 text17 CODE >153:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+478 text17 CODE >154:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+47C text17 CODE >155:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+480 text17 CODE >156:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+484 text17 CODE >157:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+491 text17 CODE >159:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+49B text17 CODE >160:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+49D text17 CODE >161:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+4A1 text17 CODE >157:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+4B2 text17 CODE >163:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+4B5 text17 CODE >164:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+66F text16 CODE >85:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+66F text16 CODE >87:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+672 text16 CODE >88:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+673 text16 CODE >89:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+676 text16 CODE >90:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+677 text16 CODE >91:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+678 text16 CODE >92:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+679 text16 CODE >93:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+67A text16 CODE >94:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+67D text16 CODE >95:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+67E text16 CODE >96:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+378 text15 CODE >111:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+378 text15 CODE >113:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+37B text15 CODE >114:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+37F text15 CODE >116:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+380 text15 CODE >117:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+382 text15 CODE >118:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+386 text15 CODE >119:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+389 text15 CODE >120:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+38D text15 CODE >121:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+390 text15 CODE >128:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+398 text15 CODE >129:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+39B text15 CODE >130:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+39D text15 CODE >131:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3A1 text15 CODE >132:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3A5 text15 CODE >133:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3A9 text15 CODE >134:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3AD text15 CODE >135:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3B1 text15 CODE >136:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3B5 text15 CODE >137:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3B9 text15 CODE >138:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3BD text15 CODE >139:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3C1 text15 CODE >140:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3C5 text15 CODE >141:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3C9 text15 CODE >142:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3CD text15 CODE >143:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3D1 text15 CODE >144:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3D5 text15 CODE >145:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3D9 text15 CODE >146:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+3DC text15 CODE >147:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+647 text14 CODE >98:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+647 text14 CODE >100:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+64C text14 CODE >101:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+64D text14 CODE >102:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+64E text14 CODE >103:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+650 text14 CODE >104:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+652 text14 CODE >105:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+653 text14 CODE >106:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+654 text14 CODE >107:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+655 text14 CODE >108:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+658 text14 CODE >109:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+65B text14 CODE >110:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+630 text13 CODE >17:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+630 text13 CODE >19:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+633 text13 CODE >20:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+634 text13 CODE >21:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+63C text13 CODE >22:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+63F text13 CODE >23:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+643 text13 CODE >24:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+646 text13 CODE >25:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+4F4 text12 CODE >9:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+4F5 text12 CODE >11:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+502 text12 CODE >12:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+50F text12 CODE >13:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+520 text12 CODE >14:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+530 text12 CODE >15:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+42E text11 CODE >179:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+431 text11 CODE >181:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+432 text11 CODE >182:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+438 text11 CODE >184:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+43F text11 CODE >185:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+44B text11 CODE >186:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+451 text11 CODE >187:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+456 text11 CODE >188:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+460 text11 CODE >189:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+466 text11 CODE >190:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+46B text11 CODE >191:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+471 text11 CODE >182:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5C7 text10 CODE >135:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5C7 text10 CODE >137:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5CA text10 CODE >138:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5CB text10 CODE >139:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5CC text10 CODE >140:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5CD text10 CODE >141:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5CE text10 CODE >142:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5CF text10 CODE >143:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5D0 text10 CODE >144:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5D9 text10 CODE >145:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5DC text10 CODE >146:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5DD text10 CODE >147:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5DE text10 CODE >148:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5DF text10 CODE >149:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5E0 text10 CODE >150:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5E1 text10 CODE >151:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5E2 text10 CODE >152:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5E3 text10 CODE >153:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5EC text10 CODE >154:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5EF text10 CODE >155:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+59E text9 CODE >157:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+59E text9 CODE >159:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5A1 text9 CODE >160:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5A2 text9 CODE >161:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5A3 text9 CODE >162:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5A4 text9 CODE >163:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5A5 text9 CODE >164:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5A6 text9 CODE >165:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5A7 text9 CODE >166:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5B0 text9 CODE >167:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5B3 text9 CODE >168:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5B4 text9 CODE >169:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5B5 text9 CODE >170:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5B6 text9 CODE >171:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5B7 text9 CODE >172:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5B8 text9 CODE >173:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5B9 text9 CODE >174:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5BA text9 CODE >175:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5C3 text9 CODE >176:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+5C6 text9 CODE >177:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+3DD text8 CODE >195:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+3E0 text8 CODE >197:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+3E1 text8 CODE >198:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+3E6 text8 CODE >199:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+3EE text8 CODE >201:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+3F7 text8 CODE >202:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+403 text8 CODE >203:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+409 text8 CODE >204:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+40E text8 CODE >205:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+418 text8 CODE >206:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+41E text8 CODE >207:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+423 text8 CODE >208:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+429 text8 CODE >199:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+42A text8 CODE >210:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+42D text8 CODE >211:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+65C text7 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+65F text7 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+660 text7 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+662 text7 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+666 text7 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+668 text7 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+66A text7 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+66D text7 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+1A3 text6 CODE >27:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1A3 text6 CODE >28:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1AB text6 CODE >29:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1AE text6 CODE >30:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1AF text6 CODE >31:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1B0 text6 CODE >32:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1B1 text6 CODE >33:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1B2 text6 CODE >34:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1B3 text6 CODE >35:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1B4 text6 CODE >36:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1BD text6 CODE >37:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1C0 text6 CODE >38:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1C9 text6 CODE >39:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1CC text6 CODE >40:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1CD text6 CODE >41:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1CE text6 CODE >42:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1CF text6 CODE >43:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1D0 text6 CODE >44:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1D1 text6 CODE >45:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1D2 text6 CODE >46:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1DB text6 CODE >47:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1DE text6 CODE >48:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1E7 text6 CODE >49:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1EA text6 CODE >50:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1EB text6 CODE >51:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1EC text6 CODE >52:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1ED text6 CODE >53:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1EE text6 CODE >54:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1EF text6 CODE >55:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1F0 text6 CODE >56:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1F9 text6 CODE >57:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+1FC text6 CODE >58:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+205 text6 CODE >59:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+208 text6 CODE >60:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+209 text6 CODE >61:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+20A text6 CODE >62:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+20B text6 CODE >63:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+20C text6 CODE >64:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+20D text6 CODE >65:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+20E text6 CODE >66:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+217 text6 CODE >67:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+21A text6 CODE >68:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+21B text6 CODE >69:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+21C text6 CODE >70:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+21D text6 CODE >71:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+21E text6 CODE >72:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+21F text6 CODE >73:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+228 text6 CODE >74:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+22B text6 CODE >75:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+234 text6 CODE >76:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+237 text6 CODE >77:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+238 text6 CODE >78:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+239 text6 CODE >79:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+23A text6 CODE >80:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+23B text6 CODE >81:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+23C text6 CODE >82:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+23D text6 CODE >83:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+246 text6 CODE >84:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+249 text6 CODE >85:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+24A text6 CODE >86:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+24B text6 CODE >87:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+24C text6 CODE >88:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+24D text6 CODE >89:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+24E text6 CODE >90:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+24F text6 CODE >91:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+250 text6 CODE >92:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+259 text6 CODE >93:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+25C text6 CODE >94:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+265 text6 CODE >95:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+268 text6 CODE >96:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+269 text6 CODE >97:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+26A text6 CODE >98:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+26B text6 CODE >99:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+26C text6 CODE >100:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+26D text6 CODE >101:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+26E text6 CODE >102:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+277 text6 CODE >103:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+27A text6 CODE >104:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+27B text6 CODE >105:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+27C text6 CODE >106:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+27D text6 CODE >107:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+27E text6 CODE >108:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+27F text6 CODE >109:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+280 text6 CODE >110:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+281 text6 CODE >111:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+28A text6 CODE >112:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+28D text6 CODE >113:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+296 text6 CODE >114:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+299 text6 CODE >115:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+29A text6 CODE >116:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+29B text6 CODE >117:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+29C text6 CODE >118:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+29D text6 CODE >119:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+29E text6 CODE >120:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+29F text6 CODE >121:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+2A8 text6 CODE >122:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+2AB text6 CODE >123:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+2AC text6 CODE >124:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+2AD text6 CODE >125:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+2AE text6 CODE >126:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+2AF text6 CODE >127:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+2B0 text6 CODE >128:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+2B1 text6 CODE >129:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+2B2 text6 CODE >130:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+2BB text6 CODE >131:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+2BE text6 CODE >132:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\LCD.h
+4B6 text5 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+4B6 text5 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+4BA text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+4BE text5 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+4C0 text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+4C2 text5 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+4C9 text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+4CD text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+4CE text5 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+4D5 text5 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+4DD text5 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+4E3 text5 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+4E4 text5 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+4EB text5 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+4EF text5 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+56A text4 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+56A text4 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+570 text4 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+572 text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+574 text4 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+57B text4 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+57F text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+580 text4 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+588 text4 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+58E text4 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+595 text4 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+599 text4 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+5F0 text3 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+5F0 text3 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+5F2 text3 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+5F6 text3 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+5FC text3 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+603 text3 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+60A text3 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+60E text3 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+67F text2 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+680 text2 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\isdigit.c
+29 text1 CODE >492:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+2C text1 CODE >533:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+30 text1 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+42 text1 CODE >538:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+46 text1 CODE >541:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+51 text1 CODE >542:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+52 text1 CODE >546:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+54 text1 CODE >548:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+55 text1 CODE >551:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+56 text1 CODE >579:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+56 text1 CODE >580:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+57 text1 CODE >581:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+5B text1 CODE >551:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+66 text1 CODE >597:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+74 text1 CODE >598:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+78 text1 CODE >600:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+8D text1 CODE >601:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+A4 text1 CODE >602:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+B3 text1 CODE >818:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+B9 text1 CODE >822:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+BA text1 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+CE text1 CODE >1286:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+DA text1 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+E0 text1 CODE >1306:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+F9 text1 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+101 text1 CODE >1381:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+112 text1 CODE >1382:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+120 text1 CODE >1384:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+124 text1 CODE >1387:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+126 text1 CODE >1415:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+12A text1 CODE >1417:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+135 text1 CODE >1418:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+13C text1 CODE >1428:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+140 text1 CODE >1430:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+14B text1 CODE >1431:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+155 text1 CODE >1472:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+159 text1 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+160 text1 CODE >1489:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+190 text1 CODE >1524:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+19B text1 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+19C text1 CODE >1538:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+2BF maintext CODE >60:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+2BF maintext CODE >62:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+2C4 maintext CODE >63:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+2C9 maintext CODE >64:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+2CE maintext CODE >65:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+2D3 maintext CODE >68:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+2D8 maintext CODE >70:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+2D9 maintext CODE >71:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+2DE maintext CODE >72:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+2E2 maintext CODE >73:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+2EF maintext CODE >75:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+318 maintext CODE >73:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+329 maintext CODE >77:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+34A maintext CODE >78:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+36B maintext CODE >80:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+371 maintext CODE >81:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+377 maintext CODE >66:D:\INGENIERIA\archivos mplab\MPLABXProjects\LAB4ej1.X\lab4ej1.c
+68D clrtext CODE >400:C:\Users\Julian\AppData\Local\Temp\s3i0.
+68D clrtext CODE >401:C:\Users\Julian\AppData\Local\Temp\s3i0.
+68E clrtext CODE >402:C:\Users\Julian\AppData\Local\Temp\s3i0.
+68E clrtext CODE >403:C:\Users\Julian\AppData\Local\Temp\s3i0.
+68F clrtext CODE >404:C:\Users\Julian\AppData\Local\Temp\s3i0.
+690 clrtext CODE >405:C:\Users\Julian\AppData\Local\Temp\s3i0.
+691 clrtext CODE >406:C:\Users\Julian\AppData\Local\Temp\s3i0.
+692 clrtext CODE >407:C:\Users\Julian\AppData\Local\Temp\s3i0.
+693 clrtext CODE >408:C:\Users\Julian\AppData\Local\Temp\s3i0.
+694 clrtext CODE >409:C:\Users\Julian\AppData\Local\Temp\s3i0.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+___lwmod@counter 77 0 COMMON 1 cstackCOMMON dist/default/production\LAB4ej1.X.production.obj
+__Hspace_0 2009 0 ABS 0 - -
+__Hspace_1 B0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__end_of_InitES CFE 0 CODE 0 text16 dist/default/production\LAB4ej1.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_T1CONbits 10 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+main@j 45 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_LCD2 7BA 0 CODE 0 text8 dist/default/production\LAB4ej1.X.production.obj
+_TMR1 E 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Julian\AppData\Local\Temp\s3i0.obj
+_main 57E 0 CODE 0 maintext dist/default/production\LAB4ej1.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+start 24 0 CODE 0 init C:\Users\Julian\AppData\Local\Temp\s3i0.obj
+__size_of_LCD2 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+?___wmul 20 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__size_of_invertir 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\Julian\AppData\Local\Temp\s3i0.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\Julian\AppData\Local\Temp\s3i0.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\Julian\AppData\Local\Temp\s3i0.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\Julian\AppData\Local\Temp\s3i0.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\Julian\AppData\Local\Temp\s3i0.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\Julian\AppData\Local\Temp\s3i0.obj
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_InitSPI 6F0 0 CODE 0 text15 dist/default/production\LAB4ej1.X.production.obj
+___bmul@multiplicand 75 0 COMMON 1 cstackCOMMON dist/default/production\LAB4ej1.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+___wmul@multiplicand 22 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+_ANSELH 189 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__end_of___bmul CDE 0 CODE 0 text7 dist/default/production\LAB4ej1.X.production.obj
+__end_of___wmul C26 0 CODE 0 text3 dist/default/production\LAB4ej1.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+___bmul@multiplier 21 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+___lwmod@divisor 27 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+_invertir 9E8 0 CODE 0 text12 dist/default/production\LAB4ej1.X.production.obj
+__end_of___lwdiv 9E8 0 CODE 0 text5 dist/default/production\LAB4ej1.X.production.obj
+__end_of___lwmod B3C 0 CODE 0 text4 dist/default/production\LAB4ej1.X.production.obj
+__size_of_isdigit 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_InitES CDE 0 CODE 0 text16 dist/default/production\LAB4ej1.X.production.obj
+_dpowers A6E 0 STRING 0 strings dist/default/production\LAB4ej1.X.production.obj
+__end_of_invertir A62 0 CODE 0 text12 dist/default/production\LAB4ej1.X.production.obj
+___lwdiv@quotient 25 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+__size_of_bajar 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__size_of_envio 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__size_of_subir 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+___lwmod@dividend 29 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+start_initialization 2A 0 CODE 0 cinit dist/default/production\LAB4ej1.X.production.obj
+_TRISCbits 87 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+clear_ram0 D1A 0 CODE 0 clrtext dist/default/production\LAB4ej1.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+_SSPBUF 13 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_SSPCON 14 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__size_of_InitES 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_isdigit$645 75 0 COMMON 1 cstackCOMMON dist/default/production\LAB4ej1.X.production.obj
+__end_of_Adquisicion 96C 0 CODE 0 text17 dist/default/production\LAB4ej1.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Julian\AppData\Local\Temp\s3i0.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 52 0 CODE 0 cinit -
+__size_of_rutinainterrupciones 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__stringbase A6C 0 STRING 0 strings dist/default/production\LAB4ej1.X.production.obj
+___lwdiv@counter 24 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+_Contador 78 0 COMMON 1 bssCOMMON dist/default/production\LAB4ej1.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+_inicializacion 346 0 CODE 0 text6 dist/default/production\LAB4ej1.X.production.obj
+__end_of_sprintf 346 0 CODE 0 text1 dist/default/production\LAB4ej1.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__end_of_isdigit D1A 0 CODE 0 text2 dist/default/production\LAB4ej1.X.production.obj
+__Lcinit 2A 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+__end_of_rutinainterrupciones C60 0 CODE 0 text18 dist/default/production\LAB4ej1.X.production.obj
+_PORTBbits 6 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_PORTCbits 7 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 24 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 24 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+LCD2@letraenvio 23 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+___bmul CB8 0 CODE 0 text7 dist/default/production\LAB4ej1.X.production.obj
+___wmul BE0 0 CODE 0 text3 dist/default/production\LAB4ej1.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_InitTMR1 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_LCD 85C 0 CODE 0 text11 dist/default/production\LAB4ej1.X.production.obj
+__S0 2009 0 ABS 0 - -
+__S1 B0 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__CFG_BOR4V$BOR40V 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+LCD2@p2 22 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+saved_w 7E 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+sprintf@val 37 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+__end_of_LCD 8E4 0 CODE 0 text11 dist/default/production\LAB4ej1.X.production.obj
+__end_of_inicializacion 57E 0 CODE 0 text6 dist/default/production\LAB4ej1.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__Lintentry 8 0 CODE 0 intentry -
+__stringtab A62 0 STRING 0 strings dist/default/production\LAB4ej1.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Julian\AppData\Local\Temp\s3i0.obj
+__size_of___bmul 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__size_of_InitSPI 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_linea1 58 0 BANK0 1 bssBANK0 dist/default/production\LAB4ej1.X.production.obj
+_linea2 A0 0 BANK1 1 bssBANK1 dist/default/production\LAB4ej1.X.production.obj
+_PIE1bits 8C 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+sprintf@flag 36 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+sprintf@prec 39 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+_InitTMR1 C8E 0 CODE 0 text14 dist/default/production\LAB4ej1.X.production.obj
+__ptext10 B8E 0 CODE 0 text10 dist/default/production\LAB4ej1.X.production.obj
+__ptext11 85C 0 CODE 0 text11 dist/default/production\LAB4ej1.X.production.obj
+__ptext12 9E8 0 CODE 0 text12 dist/default/production\LAB4ej1.X.production.obj
+__ptext13 C60 0 CODE 0 text13 dist/default/production\LAB4ej1.X.production.obj
+__ptext14 C8E 0 CODE 0 text14 dist/default/production\LAB4ej1.X.production.obj
+__ptext15 6F0 0 CODE 0 text15 dist/default/production\LAB4ej1.X.production.obj
+__ptext16 CDE 0 CODE 0 text16 dist/default/production\LAB4ej1.X.production.obj
+__ptext17 8E4 0 CODE 0 text17 dist/default/production\LAB4ej1.X.production.obj
+__ptext18 C26 0 CODE 0 text18 dist/default/production\LAB4ej1.X.production.obj
+___lwdiv 96C 0 CODE 0 text5 dist/default/production\LAB4ej1.X.production.obj
+___lwmod AD4 0 CODE 0 text4 dist/default/production\LAB4ej1.X.production.obj
+__pmaintext 57E 0 CODE 0 maintext dist/default/production\LAB4ej1.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_BanderaAdquisicion 47 0 BANK0 1 bssBANK0 dist/default/production\LAB4ej1.X.production.obj
+__CFG_IESO$ON 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__end_of_InitTMR1 CB8 0 CODE 0 text14 dist/default/production\LAB4ej1.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+___wmul@multiplier 20 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+___lwdiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+LCD@letraenvio 23 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+__size_of_Adquisicion 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\Julian\AppData\Local\Temp\s3i0.obj
+stacklo 0 0 ABS 0 - C:\Users\Julian\AppData\Local\Temp\s3i0.obj
+__end_of__stringtab A6E 0 STRING 0 strings dist/default/production\LAB4ej1.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__pbssCOMMON 78 0 COMMON 1 bssCOMMON dist/default/production\LAB4ej1.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_PIR1bits C 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__Lend_init 24 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 4A 0 CODE 0 cinit dist/default/production\LAB4ej1.X.production.obj
+__Hintentry 24 0 CODE 0 intentry -
+LCD@p1 22 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+___lwdiv@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+?___lwdiv 20 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+?___lwmod 27 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+invertir@entrada 77 0 COMMON 1 cstackCOMMON dist/default/production\LAB4ej1.X.production.obj
+__ptext1 52 0 CODE 0 text1 dist/default/production\LAB4ej1.X.production.obj
+__ptext2 CFE 0 CODE 0 text2 dist/default/production\LAB4ej1.X.production.obj
+__ptext3 BE0 0 CODE 0 text3 dist/default/production\LAB4ej1.X.production.obj
+__ptext4 AD4 0 CODE 0 text4 dist/default/production\LAB4ej1.X.production.obj
+__ptext5 96C 0 CODE 0 text5 dist/default/production\LAB4ej1.X.production.obj
+__ptext6 346 0 CODE 0 text6 dist/default/production\LAB4ej1.X.production.obj
+__ptext7 CB8 0 CODE 0 text7 dist/default/production\LAB4ej1.X.production.obj
+__ptext8 7BA 0 CODE 0 text8 dist/default/production\LAB4ej1.X.production.obj
+__ptext9 B3C 0 CODE 0 text9 dist/default/production\LAB4ej1.X.production.obj
+__end_of_InitSPI 7BA 0 CODE 0 text15 dist/default/production\LAB4ej1.X.production.obj
+_sprintf 52 0 CODE 0 text1 dist/default/production\LAB4ej1.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+sprintf@ap 35 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+sprintf@sp 3A 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+_isdigit CFE 0 CODE 0 text2 dist/default/production\LAB4ej1.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+Adquisicion@i 76 0 COMMON 1 cstackCOMMON dist/default/production\LAB4ej1.X.production.obj
+__end_of__initialization 4A 0 CODE 0 cinit dist/default/production\LAB4ej1.X.production.obj
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+_rutinainterrupciones C26 0 CODE 0 text18 dist/default/production\LAB4ej1.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\LAB4ej1.X.production.obj
+_SSPSTAT 94 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__Hend_init 2A 0 CODE 0 end_init -
+sprintf@c 3D 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+sprintf@f 2B 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+__end_of_LCD2 85C 0 CODE 0 text8 dist/default/production\LAB4ej1.X.production.obj
+__end_of_main 6F0 0 CODE 0 maintext dist/default/production\LAB4ej1.X.production.obj
+isdigit@c 76 0 COMMON 1 cstackCOMMON dist/default/production\LAB4ej1.X.production.obj
+_ANSEL 188 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__end_of_dpowers A82 0 STRING 0 strings dist/default/production\LAB4ej1.X.production.obj
+__end_of_bajar BE0 0 CODE 0 text10 dist/default/production\LAB4ej1.X.production.obj
+__end_of_envio C8E 0 CODE 0 text13 dist/default/production\LAB4ej1.X.production.obj
+?_sprintf 2B 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+_PORTB 6 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_PORTC 7 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_T1CON 10 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_TMR1H F 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_TMR1L E 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__end_of_subir B8E 0 CODE 0 text9 dist/default/production\LAB4ej1.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_bajar B8E 0 CODE 0 text10 dist/default/production\LAB4ej1.X.production.obj
+_bufer 48 0 BANK0 1 bssBANK0 dist/default/production\LAB4ej1.X.production.obj
+interrupt_function 8 0 CODE 0 intentry dist/default/production\LAB4ej1.X.production.obj
+_envio C60 0 CODE 0 text13 dist/default/production\LAB4ej1.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_subir B3C 0 CODE 0 text9 dist/default/production\LAB4ej1.X.production.obj
+_SSPSTATbits 94 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\LAB4ej1.X.production.obj
+sprintf@width 3B 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+__size_of_LCD 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__initialization 2A 0 CODE 0 cinit dist/default/production\LAB4ej1.X.production.obj
+___bmul@product 20 0 BANK0 1 cstackBANK0 dist/default/production\LAB4ej1.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__pbssBANK0 47 0 BANK0 1 bssBANK0 dist/default/production\LAB4ej1.X.production.obj
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\LAB4ej1.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+__pstrings A62 0 STRING 0 strings dist/default/production\LAB4ej1.X.production.obj
+___wmul@product 75 0 COMMON 1 cstackCOMMON dist/default/production\LAB4ej1.X.production.obj
+__size_of_inicializacion 0 0 ABS 0 - dist/default/production\LAB4ej1.X.production.obj
+_Adquisicion 8E4 0 CODE 0 text17 dist/default/production\LAB4ej1.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text4 0 56A AD4 12B 2
+cstackCOMMON 1 70 70 9 1
+cstackBANK0 1 20 20 48 1
+intentry 0 4 8 52D 2
+reset_vec 0 0 0 3 2
+bssBANK1 1 A0 A0 10 1
+strings 0 531 A62 39 2
+config 0 2007 400E 2 2

@@ -1,0 +1,36 @@
+DSP Evaluacion A2
+
+Julian Piñel ING-4995
+
+
+Ejercicio 1:
+
+Este ejercicio lo voy a plantear de la misma manera que fue planteado en la evaluacion A2 hecha en clase.
+
+Para hallar el valor de la señal de tiempo continuo, puedo aprovechar el hecho de que el muestreo cumple con el Teorema de muestreo, es decir, la frecuencia de muestreo Fs>=2xBW. Como se cumple esta hipotesis, es posible reconstruir la señal original a partir de la muestreada.
+
+Este paso puede realizarse de dos maneras:
+
+ - La primer manera es realizar la convolucion entre la señal muestreada x[n] y la funcion sinc(pi*t*Fs).
+
+ - La segunda manera es obtener la transformada de fourier de la señal muestreada x[n], y luego aplicar un filtro pasabajos con frecuencia de corte Fs/2. 
+
+Aunque son dos metodos distintos, el procedimiento es analogo. En el primer metodo trabajo todo en el dominio del tiempo. En el segundo, deberia transformar la señal x[n], realizar el producto con el cajon, tambien expresado en terminos de frecuencia, y luego antitransformar el resultado.
+
+Por terminos practicos, voy a realizar el metodo 1; aun asi cabe aclarar que deberia obtener el mismo resultado aplicando ambos metodos.
+
+Una vez aclarado esto, procedo a realizar la convolucion en matlab.
+
+
+La convolucion, en estos terminos, queda expresada como la suma infinita del producto entre la señal muestreada x[n] y la sinc(pi*Fs*t) desplazada k veces, para k de -infinito a infinito.
+
+Realizar esta convolucion en su totalidad me devuelve la señal reconstruida. Aun asi el ejercicio solo me pide la señal evaluada en t=1,5. Por lo tanto,  solo realizo la sumatoria para ese valor. Aprovechando que la señal x[n] tiene solo 4 componentes no nulas, la sumatoria para evaluar xc(t) en t=1,5 solo consta de 4 terminos.
+
+Luego de hacer la sumatoria, el resultado arrojado es xc(1.5)=3.3953.  Este resultado tiene un valor que a primera vista parece ser correcto, dado que no se desvia demasiado de sus dos valores mas cercanos. 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Ejercicio 2: 
+
+La explicacion de este ejercicio viene acompañada en el script.
